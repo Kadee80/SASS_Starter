@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>UI Standards</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>UI Standards</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
+
 <body>
-
-<h1>This h1 is using the $primary-blue var</h1>
-<h2>This h2 is using the $primary-black var</h2>
-
+    <h1>This h1 is using the $primary-blue var</h1>
+    <h2>This h2 is using the $primary-pink var</h2>
+    <div class="wrapper">
+        <div class="two-col">
+            <p>This class is only applied to the 2 col paragraphs because of nesting.....................................</p>
+        </div>
+        <div class="two-col">
+            <p>This class is only applied to the 2 col paragraphs because of nesting.....................................</p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="three-col">
+            <p>This class is only applied to the 3 col paragraphs because of nesting.....................................</p>
+        </div>
+        <div class="three-col">
+            <p>This class is only applied to the 3 col paragraphs because of nesting. The ul tag has a @grid-row() mixin applied. Easier than bootstrap div class row etc right?</p>
+            <ul>
+                <li>oh look a nested list item!</li>
+                <li><a href="#">oh look a nested list item with a link style</a></li>
+                <li>oh look a nested list item!</li>
+            </ul>
+        </div>
+        <div class="three-col">
+            <p>This class is only applied to the 3 col paragraphs because of nesting.....................................</p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="four-col">
+            <p>4 column layout paragraph. <a href="#">this link is a different color because of nesting!</a></p>
+        </div>
+        <div class="four-col">
+        	<p>4 column layout paragraph. <a href="#">this link is a different color because of nesting!</a></p>
+        </div>
+        <div class="four-col">
+        	<p>4 column layout paragraph. <a href="#">this link is a different color because of nesting!</a></p>
+        </div>
+        <div class="four-col">
+        	<p>4 column layout paragraph. <a href="#">this link is a different color because of nesting!</a></p>
+        </div>
+    </div>
 </body>
+
 </html>

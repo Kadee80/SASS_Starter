@@ -1,11 +1,50 @@
 @import "util";
-
 // write all of your global styles here
-
-h1{
-    color:$primary-blue;
+h1 {
+    color: $primary-blue;
 }
 
-h2{
-	color:$primary-black;
+h2 {
+    color: $primary-pink;
+}
+
+div {
+    background-color: $div-bg;
+    min-height: 300px;
+}
+
+div.wrapper {
+    @include grid-row();
+
+    .two-col {
+        @include grid-col(6);
+        p{
+        	color:$primary-pink;
+        }
+    }
+    .three-col {
+        @include grid-col(4);
+        ul{
+        	@include grid-row();
+        	li{
+        		@include grid-col(2);
+        		color:$primary-blue;
+        		a{
+        			color: green;
+        		}
+        	}
+        }
+        
+    }
+    .four-col {
+        @include grid-col(3);
+        p{
+        	color:blue;;
+        	a{
+        		color:yellow;
+        	}
+        }
+
+    }
+ 
 }
